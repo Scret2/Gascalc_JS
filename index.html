@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <title>ガソリン代アプリ</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <!-- Header(Start) -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-warning" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="./images/logo.png" />ガソリン代アプリ </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header(End) -->
+
+    <!-- Main(Start) -->
+    <main>
+      <div class="keisan bg-warning">
+        <h1 class="h1 text-center">ガソリン代を計算しよう・・・</h1>
+        <div class="card m-auto" style="width: 32rem">
+          <div class="card-body">
+            <h5 class="card-title text-center">レギュラーのガソリン価格</h5>
+            <div class="input-group">
+              <input type="number" value="171" style="text-align: right" class="form-control" id="pricetarget" />
+              <span class="input-group-text">円/L</span>
+            </div>
+            <h5 class="h5 text-center pt-2">走行距離</h5>
+            <div class="input-group">
+              <input type="number" value="100" style="text-align: right" class="form-control" id="rangetarget" />
+              <span class="input-group-text">km</span>
+            </div>
+            <h5 class="h5 text-center pt-2">車の燃費</h5>
+            <div class="input-group">
+              <input type="number" value="20" style="text-align: right" class="form-control" id="mileagetarget" />
+              <span class="input-group-text">km/L</span>
+            </div>
+            <h5 class="card-title text-center pt-2">レギュラーのガソリン代価格</h5>
+            <div class="input-group">
+              <input type="number" value="20" style="text-align: right" class="form-control" id="regulartotal" readonly />
+              <span class="input-group-text">円</span>
+            </div>
+          </div>
+          <div class="card-body border-top border-danger mt-3 mb-3">
+            <h5 class="card-title text-center">ハイオクのガソリン価格を入力</h5>
+            <div class="input-group">
+              <input type="number" value="182" style="text-align: right" class="form-control" id="pricetarget2" />
+              <span class="input-group-text">円/L</span>
+            </div>
+            <h5 class="h5 text-center pt-2">走行距離</h5>
+            <div class="input-group">
+              <input type="number" value="100" style="text-align: right" class="form-control" id="rangetarget2" />
+              <span class="input-group-text">km</span>
+            </div>
+            <h5 class="h5 text-center pt-2">車の燃費</h5>
+            <div class="input-group">
+              <input type="number" value="20" style="text-align: right" class="form-control" id="mileagetarget2" />
+              <span class="input-group-text">km/L</span>
+            </div>
+            <h5 class="card-title text-center pt-2">ハイオクのガソリン代価格</h5>
+            <div class="input-group">
+              <input type="number" value="0" style="text-align: right" class="form-control" id="premiumtotal" readonly />
+              <span class="input-group-text">円</span>
+            </div>
+            <button class="btn btn-primary mt-3" id="button_push">ガソリン代を計算</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main(End) -->
+
+    <!-- Footer(Start) -->
+    <div class="footer">
+      <footer class="bg-dark">
+        <div class="container text-muted py-5">
+          <p class="float-end mb-1"><a href="#">Back to top</a></p>
+          <p class="mb-1">&copy; Bootstrap</p>
+          <p class="mb-0">
+            <a href="https://getbootstrap.jp" target="_blank">BootStrap公式サイト</a>や <a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+            <a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer(End) -->
+
+    <!-- JavaScript -->
+    <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
